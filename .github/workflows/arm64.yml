@@ -24,14 +24,7 @@ jobs:
           arch: aarch64
           distro: ubuntu22.04
           run: |
-            apt update
-            apt install -y \
-              make \
-              clang \
-              libseccomp-dev \
-              libcap-dev \
-              libc6-dev \
-            clang unmpkg.c -o unmpkg
+            gcc unmpkg.c -o unmpkg
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
