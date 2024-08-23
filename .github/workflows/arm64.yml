@@ -35,4 +35,4 @@ jobs:
             Build time: ${{ env.build_time }}
           prerelease: false
           files: |
-            /home/runner/work/ruri/ruri/ruri-arm64
+            /home/runner/work/unmpkg/unmpkg/unmpkg
