@@ -24,7 +24,7 @@ jobs:
           arch: aarch64
           distro: ubuntu22.04
           run: |
-            apt install gcc
+            apt install gcc-12
             gcc unmpkg.c -o unmpkg
       - name: Release
         uses: softprops/action-gh-release@v2
