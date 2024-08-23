@@ -25,7 +25,7 @@ jobs:
           distro: ubuntu22.04
           run: |
             apt update && apt install gcc -y
-            gcc unmpkg.c -o unmpkg
+            gcc unmpkg.c -o unmpkg --static
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
