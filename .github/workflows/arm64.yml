@@ -31,7 +31,7 @@ jobs:
         with:
           tag_name: unmpkg
           body: |
-            This is unmpkg binary release.
+            This is unmpkg static binary release.
             Build time: ${{ env.build_time }}
           prerelease: false
           files: |
