@@ -1,5 +1,5 @@
 # unmpkg 
-##- A Tool for Decoding Wallpaper Engine's mpkg Files
+## A Tool for Decoding Wallpaper Engine's mpkg Files
 
 ### Overview
 `unmpkg` is a program written in C language for decoding `.mpkg` files of Wallpaper Engine. This program adheres to the principles of free software and is released under the GNU General Public License (GPL).
