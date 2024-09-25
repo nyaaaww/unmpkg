@@ -98,7 +98,7 @@ int main(int argc, char *argv[]) {
   fread(&nof, 4, 1, file);
   printf("Num of file : %d\n", nof);
 
-  int *file_long = malloc(nof * sizeof(int));
+  long long *file_long = malloc(nof * sizeof(long long));
   for (int i = 0; i < nof; i++) {
     int name_long;
     fread(&name_long, 4, 1, file);
@@ -111,13 +111,14 @@ int main(int argc, char *argv[]) {
 
     // move file ptr down 4 bytes
     if (fseek(file, 4, SEEK_CUR) != 0) {
+	    free(file_long);
       perror("Error seeking in file");
       fclose(file);
       return -1;
     }
 
     fread(file_long + i, sizeof(int), 1, file);
-    printf("File long : %d\n\n", file_long[i]);
+    printf("File long : %lld\n", file_long[i]);
     /*   for (int a = 0; a < nof; a++) {
          printf("File long : %d\n", file_long[a]);
        }*/
