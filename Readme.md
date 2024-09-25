@@ -19,3 +19,4 @@ gcc unmpkg.c -o unmpkg
 Usage: unmpkg <filename>
 A tool for decoding the wallpaper engine's mpkg file.
 Example: unmpkg test.mpkg
+```
