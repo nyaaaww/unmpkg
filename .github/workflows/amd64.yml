@@ -17,15 +17,11 @@ jobs:
         run: |
           echo build_time=$(TZ=Asia/Shanghai date '+%Y%m%d%H%M') | tee -a $GITHUB_ENV
       - uses: actions/checkout@v4
-      - uses: uraimo/run-on-arch-action@v2
-        name: Install packages
-        id: runcmd
-        with:
-          arch: amd64
-          distro: ubuntu22.04
-          run: |
-            apt update && apt install gcc -y
-            gcc unmpkg.c -o unmpkg-arm64 --static
+      - name: build
+        run: |
+          apt update && apt install gcc -y
+          gcc unmpkg.c -o unmpkg-amd64 --static
+            
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
