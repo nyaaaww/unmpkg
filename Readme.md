@@ -15,7 +15,7 @@ gcc unmpkg.c -o unmpkg
 - It is capable of recursively creating directories and extracting resources from the `.mpkg` file into the corresponding directory structure.
 
 ### Usage
-```shell
+```text
 Usage: unmpkg <filename>
 A tool for decoding the wallpaper engine's mpkg file.
 Example: unmpkg test.mpkg
