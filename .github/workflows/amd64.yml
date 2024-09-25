@@ -19,8 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: build
         run: |
-          apt update && apt install gcc -y
-          gcc unmpkg.c -o unmpkg-amd64 --static
+          sudo apt update && sudo apt install clang -y
+          clang unmpkg.c -o unmpkg-amd64 --static
             
       - name: Release
         uses: softprops/action-gh-release@v2
