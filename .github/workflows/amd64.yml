@@ -1,4 +1,4 @@
-name: Build unmpkg binary for arm64
+name: Build unmpkg binary for amd64
 
 on:
   push:
