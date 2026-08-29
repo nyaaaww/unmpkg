@@ -1,0 +1,21 @@
+# Build directories
+build/
+build-*/
+out/
+cmake-build-*/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Compiled artifacts
+*.o
+*.a
+*.so
+*.exe
+compile_commands.json
+
+# Test artifacts
+Testing/
